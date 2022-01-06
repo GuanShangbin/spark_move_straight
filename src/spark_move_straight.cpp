@@ -26,4 +26,8 @@ int main(int argc, char** argv)
   ROS_INFO("Spark stop moving!!!");
   ros::spin();                               //循环等待回调函数
   return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f9213862615f4566bc8393f461d0fdb04802f826
