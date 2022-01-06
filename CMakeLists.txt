@@ -121,8 +121,8 @@ include_directories(
 )
 
 
-add_executable(spark_move_straight src/spark_move_straight.cpp)
-target_link_libraries(spark_move_straight ${catkin_LIBRARIES})
+add_executable(spark_move_straight_node src/spark_move_straight.cpp)
+target_link_libraries(spark_move_straight_node ${catkin_LIBRARIES})
 
 
 ## Declare a C++ library
