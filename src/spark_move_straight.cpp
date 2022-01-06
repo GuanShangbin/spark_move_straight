@@ -13,19 +13,7 @@ int main(int argc, char** argv)
   ros::Rate rate(10);                          //设置循环的频率
   double prev_sec = ros::Time().now().toSec();     //获取当前时间
   int sec = 3;                                //运动时间3s
-  while (ros::ok())#include "ros/ros.h"
-#include <geometry_msgs/Twist.h>
-
-int main(int argc, char** argv)
-{
-  ros::init(argc, argv, "spark_move_straight_node"); //ROS节点初始化
-  ROS_INFO("The spark are moving straight!!!");  //终端输出文字
-  ros::NodeHandle nh;                        //创建节点句柄
-  ros::Publisher cmd_pub;                     //创建一个Publisher
-
-  //发布名为/cmd_vel的topic，消息类型为geometry_msgs::Twist
-  cmd_pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
-  ros::Rate rate(10);    
+  while (ros::ok())
   {
     if (ros::Time().now().toSec() - prev_sec > sec)  //时间是否到了
       break;
